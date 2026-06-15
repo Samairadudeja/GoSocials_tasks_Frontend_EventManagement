@@ -16,14 +16,6 @@ A simple Event Management System developed using HTML, CSS, and JavaScript. This
 - CSS3
 - JavaScript
 
-## Project Structure
-
-Event-Management-System/
-├── index.html
-├── style.css
-├── script.js
-└── images/
-
 ## How to Run
 
 1. Download or clone the repository.

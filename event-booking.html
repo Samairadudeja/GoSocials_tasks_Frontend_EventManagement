@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> event system</title>
+         <link rel ="stylesheet" href="bookings.css">
+    </head>
+    <body>
+        <div class="heading">
+        <h1><center> Event Booking System</center></h1>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <h2> Music Concert</h2>
+                <p> Date:20 June 2026</p>
+                <p>Price: ₹2000</p>
+            </div>
+            <div class="card1">
+                <h2> Tech Seminar</h2>
+                <p>Date: 25 June 2026</p>
+                <p>Price: ₹600</p>
+            </div>
+            <div class="card2">
+                <h2> Food Seminar</h2>
+                <p>Date: 30 June 2026</p>
+                <p> Price: ₹500</p>
+            </div>
+        </div>
+        <form id="booking">
+            <h2><center>Book Your Ticket</center></h2>
+            Name: <input type="text" id="name" placeholder="Enter Name" maxlength="20" required><br><br>
+            E-Mail Id: <input type="email" id="mail" placeholder="Enter e-mail" required><br><br>
+            Phone Number: <input type="number" id="number" placeholder="Enter Number" ><br><br>
+            <p> Select Event:</p>
+            <select id="event">
+                <option>Music Concert</option>
+                <option> Tech Seminar</option>
+                <option> Food Festival</option>
+            </select><br><br>
+            No. of Tickets: <input type="number" id="tickets" placeholder="Enter No. of Tickets" required>
+            <center><button type="submit">Book Now</button></center>
+        </form>
+        <script>
+            document.getElementById("booking").addEventListener("submit", function(e){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("mail").value;
+            let pno=document.getElementById("number").value;
+            let tickets=document.getElementById("tickets").value;
+            let event=document.getElementById("event").value;
+            if(name=="" || email=="" || pno=="" || tickets=="" || event=="")
+                {
+                    alert("fill all fields");
+                }
+            else if( tickets<=0 )
+            {
+              alert("Enter Valid Number of Tickets");
+            }   
+            else if(pno.length!=10) 
+            {
+                alert("Phone Number should be of 10 digits");
+            }
+            else{
+                alert("🎉Booking Successful!");
+            }
+        });
+        </script>
+    </body>
+</html>

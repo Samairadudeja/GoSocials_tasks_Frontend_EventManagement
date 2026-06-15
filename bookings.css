@@ -1,0 +1,65 @@
+.heading{
+    background-image:URL("dark2.png");
+    padding:50px;
+    margin-bottom:25px;
+}
+body{
+    font-family:arial;
+    background-color:black;
+    color:white;
+}
+.contain{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+.card{
+    background-image:URL("pngtree-music-notes-flowing-on-a-dark-background-picture-image_3176634.jpg");
+    height:200px;
+    width:250px;
+    border-radius:10px;
+    text-align:center;
+    background-repeat:no-repeat;
+}
+.card1{
+    background-image:URL("OIP.jpg");
+    height:200px;
+    width:250px;
+    border-radius:10px;
+    text-align:center;
+     background-repeat:no-repeat;
+}
+.card2{
+    background-image:URL("OIP (1).jpg");
+    height:200px;
+    width:250px;
+    border-radius:10px;
+    text-align:center;
+     background-repeat:no-repeat;
+}
+form{
+    background:#1E1E1E;
+    max-width:400px;
+    margin:30px auto;
+    padding:20px;
+    border-radius:10px;
+
+}
+input,select{
+    width:100%;
+    padding:10px;
+    background:#2A2A2A;
+    color:white;
+    border-radius:5px;
+}
+button{
+    width:100%;
+    background:#8B5E3C;
+    color:white;
+    border-radius:5px;
+    padding:12px;
+    margin-top:10px;
+}
+button:hover{
+    background:#6F4E37;
+}
